@@ -88,7 +88,7 @@ namespace Whitelagoon.Web.Controllers
                 TempData["success"] = "The Villa is deleted successfully.";
                 return RedirectToAction("Index");
             }
-            TempData["error"] = "The Villa could not be deleted.";
+            TempData["error"] = "The Villa is could not be deleted.";
             return View(obj);
         }
     }
