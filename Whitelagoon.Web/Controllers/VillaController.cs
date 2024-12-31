@@ -19,19 +19,19 @@ namespace Whitelagoon.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create() 
+        public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(Villa obj) 
+        public IActionResult Create(Villa obj)
         {
             if (obj.Name == obj.Description)
             {
-                ModelState.AddModelError("","The Description cannot match with Name.");
+                ModelState.AddModelError("", "The Description cannot match with Name.");
             }
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _db.Villas.Add(obj);
                 _db.SaveChanges();
@@ -39,7 +39,7 @@ namespace Whitelagoon.Web.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-            
+
         }
 
         [HttpGet]
@@ -48,7 +48,7 @@ namespace Whitelagoon.Web.Controllers
             Villa? obj = _db.Villas.FirstOrDefault(u => u.Id == villaId);
             if (obj is null)
             {
-                return RedirectToAction("Error","Home");
+                return RedirectToAction("Error", "Home");
             }
             return View(obj);
         }
@@ -56,7 +56,7 @@ namespace Whitelagoon.Web.Controllers
         [HttpPost]
         public IActionResult Update(Villa obj)
         {
-            if (ModelState.IsValid && obj.Id>0)
+            if (ModelState.IsValid && obj.Id > 0)
             {
                 _db.Villas.Update(obj);
                 _db.SaveChanges();
@@ -65,14 +65,14 @@ namespace Whitelagoon.Web.Controllers
             }
             return View(obj);
         }
-        
+
         [HttpGet]
         public IActionResult Delete(int villaId)
         {
             Villa? obj = _db.Villas.FirstOrDefault(u => u.Id == villaId);
             if (obj is null)
             {
-                return RedirectToAction("Error","Home");
+                return RedirectToAction("Error", "Home");
             }
             return View(obj);
         }
@@ -88,7 +88,7 @@ namespace Whitelagoon.Web.Controllers
                 TempData["success"] = "The Villa is deleted successfully.";
                 return RedirectToAction("Index");
             }
-            TempData["error"] = "The Villa is could not be deleted.";
+            TempData["error"] = "The Villa could not be deleted.";
             return View(obj);
         }
     }
