@@ -2,7 +2,7 @@
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infrastructure.Data;
 
-namespace Whitelagoon.Web.Controllers
+namespace WhiteLagoon.Web.Controllers
 {
     public class VillaController : Controller
     {

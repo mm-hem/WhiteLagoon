@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WhiteLagoon.Domain.Entities;
 
-namespace Whitelagoon.Web.ViewModel
+namespace WhiteLagoon.Web.ViewModel
 {
     public class VillaNumberVM
     {
