@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Web", "WhiteLagoon.Web\WhiteLagoon.Web.csproj", "{E242003D-E9C0-4124-A69A-677768BCF7AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelagoon.Web", "Whitelagoon.Web\Whitelagoon.Web.csproj", "{E242003D-E9C0-4124-A69A-677768BCF7AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Infrastructure", "WhiteLagoon.Infrastructure\WhiteLagoon.Infrastructure.csproj", "{CA79D90D-8FCB-4C7B-9EA5-B3721BA3756A}"
 EndProject

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Whitelagoon.Web.ViewModel;
+using WhiteLagoon.Web.ViewModel;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infrastructure.Data;
 
-namespace Whitelagoon.Web.Controllers
+namespace WhiteLagoon.Web.Controllers
 {
     public class VillaNumberController : Controller
     {
