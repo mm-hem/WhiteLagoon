@@ -11,6 +11,7 @@ namespace WhiteLagoon.Infrastructure.Repository
         {
             _db = db;
         }
+
         public void Update(VillaNumber enitity){
             _db.VillaNumbers.Update(enitity);
         }
